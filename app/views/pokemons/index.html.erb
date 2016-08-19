@@ -1,19 +1,20 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <h1>Pokemons</h1>
+      <h1>Pokemon</h1>
         <table class="table table-striped" data-toggle="table">
           <thead>
             <tr>
-              <th data-sortable="true">Pokemon</th>
+              <th data-sortable="true">#</th>
               <th data-sortable="true">Nickname</th>
+              <th data-sortable="true">CP</th>
               <th data-sortable="true">Move 1</th>
               <th data-sortable="true">Move 2</th>
-              <th data-sortable="true">Defense</th>
-              <th data-sortable="true">Attack</th>
-              <th data-sortable="true">Stamina</th>
+              <th data-sortable="true">Def</th>
+              <th data-sortable="true">Att</th>
+              <th data-sortable="true">Stam</th>
               <th data-sortable="true">Sum</th>
-              <th data-sortable="true">Pct Perfect</th>
+              <th data-sortable="true">%</th>
             </tr>
           </thead>
           <tbody>
@@ -21,6 +22,7 @@
             <tr>
               <td><%= pokemon.pokemon_id %></td>
               <td><%= pokemon.nickname || "-" %></td>
+              <td><%= pokemon.cp %></td>
               <td><%= pokemon.move_1 %></td>
               <td><%= pokemon.move_2 %></td>
               <td><%= pokemon.individual_defense %></td>
