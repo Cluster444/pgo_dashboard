@@ -3,6 +3,8 @@
 <table>
   <thead>
     <tr>
+      <td>Pokemon</td>
+      <td>Nickname</td>
       <td>Move 1</td>
       <td>Move 2</td>
       <td>Defense</td>
@@ -13,6 +15,8 @@
   <tbody>
     <% @pokemons.each do |pokemon| %>
     <tr>
+      <td><%= pokemon.pokemon_id %></td>
+      <td><%= pokemon.nickname || "-" %></td>
       <td><%= pokemon.move_1 %></td>
       <td><%= pokemon.move_2 %></td>
       <td><%= pokemon.individual_defense %></td>
