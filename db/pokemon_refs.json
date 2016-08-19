@@ -1,0 +1,1059 @@
+[
+  {
+      "id": 1,
+      "name": "BULBASAUR",
+      "stamina": 90,
+      "attack": 126,
+      "defense": 126
+  },
+  {
+      "id": 2,
+      "name": "IVYSAUR",
+      "stamina": 120,
+      "attack": 156,
+      "defense": 158
+  },
+  {
+      "id": 3,
+      "name": "VENUSAUR",
+      "stamina": 160,
+      "attack": 198,
+      "defense": 200
+  },
+  {
+      "id": 4,
+      "name": "CHARMANDER",
+      "stamina": 78,
+      "attack": 128,
+      "defense": 108
+  },
+  {
+      "id": 5,
+      "name": "CHARMELEON",
+      "stamina": 116,
+      "attack": 160,
+      "defense": 140
+  },
+  {
+      "id": 6,
+      "name": "CHARIZARD",
+      "stamina": 156,
+      "attack": 212,
+      "defense": 182
+  },
+  {
+      "id": 7,
+      "name": "SQUIRTLE",
+      "stamina": 88,
+      "attack": 112,
+      "defense": 142
+  },
+  {
+      "id": 8,
+      "name": "WARTORTLE",
+      "stamina": 118,
+      "attack": 144,
+      "defense": 176
+  },
+  {
+      "id": 9,
+      "name": "BLASTOISE",
+      "stamina": 158,
+      "attack": 186,
+      "defense": 222
+  },
+  {
+      "id": 10,
+      "name": "CATERPIE",
+      "stamina": 90,
+      "attack": 62,
+      "defense": 66
+  },
+  {
+      "id": 11,
+      "name": "METAPOD",
+      "stamina": 100,
+      "attack": 56,
+      "defense": 86
+  },
+  {
+      "id": 12,
+      "name": "BUTTERFREE",
+      "stamina": 120,
+      "attack": 144,
+      "defense": 144
+  },
+  {
+      "id": 13,
+      "name": "WEEDLE",
+      "stamina": 80,
+      "attack": 68,
+      "defense": 64
+  },
+  {
+      "id": 14,
+      "name": "KAKUNA",
+      "stamina": 90,
+      "attack": 62,
+      "defense": 82
+  },
+  {
+      "id": 15,
+      "name": "BEEDRILL",
+      "stamina": 130,
+      "attack": 144,
+      "defense": 130
+  },
+  {
+      "id": 16,
+      "name": "PIDGEY",
+      "stamina": 80,
+      "attack": 94,
+      "defense": 90
+  },
+  {
+      "id": 17,
+      "name": "PIDGEOTTO",
+      "stamina": 126,
+      "attack": 126,
+      "defense": 122
+  },
+  {
+      "id": 18,
+      "name": "PIDGEOT",
+      "stamina": 166,
+      "attack": 170,
+      "defense": 166
+  },
+  {
+      "id": 19,
+      "name": "RATTATA",
+      "stamina": 60,
+      "attack": 92,
+      "defense": 86
+  },
+  {
+      "id": 20,
+      "name": "RATICATE",
+      "stamina": 110,
+      "attack": 146,
+      "defense": 150
+  },
+  {
+      "id": 21,
+      "name": "SPEAROW",
+      "stamina": 80,
+      "attack": 102,
+      "defense": 78
+  },
+  {
+      "id": 22,
+      "name": "FEAROW",
+      "stamina": 130,
+      "attack": 168,
+      "defense": 146
+  },
+  {
+      "id": 23,
+      "name": "EKANS",
+      "stamina": 70,
+      "attack": 112,
+      "defense": 112
+  },
+  {
+      "id": 24,
+      "name": "ARBOK",
+      "stamina": 120,
+      "attack": 166,
+      "defense": 166
+  },
+  {
+      "id": 25,
+      "name": "PIKACHU",
+      "stamina": 70,
+      "attack": 124,
+      "defense": 108
+  },
+  {
+      "id": 26,
+      "name": "RAICHU",
+      "stamina": 120,
+      "attack": 200,
+      "defense": 154
+  },
+  {
+      "id": 27,
+      "name": "SANDSHREW",
+      "stamina": 100,
+      "attack": 90,
+      "defense": 114
+  },
+  {
+      "id": 28,
+      "name": "SANDSLASH",
+      "stamina": 150,
+      "attack": 150,
+      "defense": 172
+  },
+  {
+      "id": 29,
+      "name": "NIDORAN_FEMALE",
+      "stamina": 110,
+      "attack": 100,
+      "defense": 104
+  },
+  {
+      "id": 30,
+      "name": "NIDORINA",
+      "stamina": 140,
+      "attack": 132,
+      "defense": 136
+  },
+  {
+      "id": 31,
+      "name": "NIDOQUEEN",
+      "stamina": 180,
+      "attack": 184,
+      "defense": 190
+  },
+  {
+      "id": 32,
+      "name": "NIDORAN_MALE",
+      "stamina": 92,
+      "attack": 110,
+      "defense": 94
+  },
+  {
+      "id": 33,
+      "name": "NIDORINO",
+      "stamina": 122,
+      "attack": 142,
+      "defense": 128
+  },
+  {
+      "id": 34,
+      "name": "NIDOKING",
+      "stamina": 162,
+      "attack": 204,
+      "defense": 170
+  },
+  {
+      "id": 35,
+      "name": "CLEFAIRY",
+      "stamina": 140,
+      "attack": 116,
+      "defense": 124
+  },
+  {
+      "id": 36,
+      "name": "CLEFABLE",
+      "stamina": 190,
+      "attack": 178,
+      "defense": 178
+  },
+  {
+      "id": 37,
+      "name": "VULPIX",
+      "stamina": 76,
+      "attack": 106,
+      "defense": 118
+  },
+  {
+      "id": 38,
+      "name": "NINETALES",
+      "stamina": 146,
+      "attack": 176,
+      "defense": 194
+  },
+  {
+      "id": 39,
+      "name": "JIGGLYPUFF",
+      "stamina": 230,
+      "attack": 98,
+      "defense": 54
+  },
+  {
+      "id": 40,
+      "name": "WIGGLYTUFF",
+      "stamina": 280,
+      "attack": 168,
+      "defense": 108
+  },
+  {
+      "id": 41,
+      "name": "ZUBAT",
+      "stamina": 80,
+      "attack": 88,
+      "defense": 90
+  },
+  {
+      "id": 42,
+      "name": "GOLBAT",
+      "stamina": 150,
+      "attack": 164,
+      "defense": 164
+  },
+  {
+      "id": 43,
+      "name": "ODDISH",
+      "stamina": 90,
+      "attack": 134,
+      "defense": 130
+  },
+  {
+      "id": 44,
+      "name": "GLOOM",
+      "stamina": 120,
+      "attack": 162,
+      "defense": 158
+  },
+  {
+      "id": 45,
+      "name": "VILEPLUME",
+      "stamina": 150,
+      "attack": 202,
+      "defense": 190
+  },
+  {
+      "id": 46,
+      "name": "PARAS",
+      "stamina": 70,
+      "attack": 122,
+      "defense": 120
+  },
+  {
+      "id": 47,
+      "name": "PARASECT",
+      "stamina": 120,
+      "attack": 162,
+      "defense": 170
+  },
+  {
+      "id": 48,
+      "name": "VENONAT",
+      "stamina": 120,
+      "attack": 108,
+      "defense": 118
+  },
+  {
+      "id": 49,
+      "name": "VENOMOTH",
+      "stamina": 140,
+      "attack": 172,
+      "defense": 154
+  },
+  {
+      "id": 50,
+      "name": "DIGLETT",
+      "stamina": 20,
+      "attack": 108,
+      "defense": 86
+  },
+  {
+      "id": 51,
+      "name": "DUGTRIO",
+      "stamina": 70,
+      "attack": 148,
+      "defense": 140
+  },
+  {
+      "id": 52,
+      "name": "MEOWTH",
+      "stamina": 80,
+      "attack": 104,
+      "defense": 94
+  },
+  {
+      "id": 53,
+      "name": "PERSIAN",
+      "stamina": 130,
+      "attack": 156,
+      "defense": 146
+  },
+  {
+      "id": 54,
+      "name": "PSYDUCK",
+      "stamina": 100,
+      "attack": 132,
+      "defense": 112
+  },
+  {
+      "id": 55,
+      "name": "GOLDUCK",
+      "stamina": 160,
+      "attack": 194,
+      "defense": 176
+  },
+  {
+      "id": 56,
+      "name": "MANKEY",
+      "stamina": 80,
+      "attack": 122,
+      "defense": 96
+  },
+  {
+      "id": 57,
+      "name": "PRIMEAPE",
+      "stamina": 130,
+      "attack": 178,
+      "defense": 150
+  },
+  {
+      "id": 58,
+      "name": "GROWLITHE",
+      "stamina": 110,
+      "attack": 156,
+      "defense": 110
+  },
+  {
+      "id": 59,
+      "name": "ARCANINE",
+      "stamina": 180,
+      "attack": 230,
+      "defense": 180
+  },
+  {
+      "id": 60,
+      "name": "POLIWAG",
+      "stamina": 80,
+      "attack": 108,
+      "defense": 98
+  },
+  {
+      "id": 61,
+      "name": "POLIWHIRL",
+      "stamina": 130,
+      "attack": 132,
+      "defense": 132
+  },
+  {
+      "id": 62,
+      "name": "POLIWRATH",
+      "stamina": 180,
+      "attack": 180,
+      "defense": 202
+  },
+  {
+      "id": 63,
+      "name": "ABRA",
+      "stamina": 50,
+      "attack": 110,
+      "defense": 76
+  },
+  {
+      "id": 64,
+      "name": "KADABRA",
+      "stamina": 80,
+      "attack": 150,
+      "defense": 112
+  },
+  {
+      "id": 65,
+      "name": "ALAKAZAM",
+      "stamina": 110,
+      "attack": 186,
+      "defense": 152
+  },
+  {
+      "id": 66,
+      "name": "MACHOP",
+      "stamina": 140,
+      "attack": 118,
+      "defense": 96
+  },
+  {
+      "id": 67,
+      "name": "MACHOKE",
+      "stamina": 160,
+      "attack": 154,
+      "defense": 144
+  },
+  {
+      "id": 68,
+      "name": "MACHAMP",
+      "stamina": 180,
+      "attack": 198,
+      "defense": 180
+  },
+  {
+      "id": 69,
+      "name": "BELLSPROUT",
+      "stamina": 100,
+      "attack": 158,
+      "defense": 78
+  },
+  {
+      "id": 70,
+      "name": "WEEPINBELL",
+      "stamina": 130,
+      "attack": 190,
+      "defense": 110
+  },
+  {
+      "id": 71,
+      "name": "VICTREEBEL",
+      "stamina": 160,
+      "attack": 222,
+      "defense": 152
+  },
+  {
+      "id": 72,
+      "name": "TENTACOOL",
+      "stamina": 80,
+      "attack": 106,
+      "defense": 136
+  },
+  {
+      "id": 73,
+      "name": "TENTACRUEL",
+      "stamina": 160,
+      "attack": 170,
+      "defense": 196
+  },
+  {
+      "id": 74,
+      "name": "GEODUDE",
+      "stamina": 80,
+      "attack": 106,
+      "defense": 118
+  },
+  {
+      "id": 75,
+      "name": "GRAVELER",
+      "stamina": 110,
+      "attack": 142,
+      "defense": 156
+  },
+  {
+      "id": 76,
+      "name": "GOLEM",
+      "stamina": 160,
+      "attack": 176,
+      "defense": 198
+  },
+  {
+      "id": 77,
+      "name": "PONYTA",
+      "stamina": 100,
+      "attack": 168,
+      "defense": 138
+  },
+  {
+      "id": 78,
+      "name": "RAPIDASH",
+      "stamina": 130,
+      "attack": 200,
+      "defense": 170
+  },
+  {
+      "id": 79,
+      "name": "SLOWPOKE",
+      "stamina": 180,
+      "attack": 110,
+      "defense": 110
+  },
+  {
+      "id": 80,
+      "name": "SLOWBRO",
+      "stamina": 190,
+      "attack": 184,
+      "defense": 198
+  },
+  {
+      "id": 81,
+      "name": "MAGNEMITE",
+      "stamina": 50,
+      "attack": 128,
+      "defense": 138
+  },
+  {
+      "id": 82,
+      "name": "MAGNETON",
+      "stamina": 100,
+      "attack": 186,
+      "defense": 180
+  },
+  {
+      "id": 83,
+      "name": "FARFETCHD",
+      "stamina": 104,
+      "attack": 138,
+      "defense": 132
+  },
+  {
+      "id": 84,
+      "name": "DODUO",
+      "stamina": 70,
+      "attack": 126,
+      "defense": 96
+  },
+  {
+      "id": 85,
+      "name": "DODRIO",
+      "stamina": 120,
+      "attack": 182,
+      "defense": 150
+  },
+  {
+      "id": 86,
+      "name": "SEEL",
+      "stamina": 130,
+      "attack": 104,
+      "defense": 138
+  },
+  {
+      "id": 87,
+      "name": "DEWGONG",
+      "stamina": 180,
+      "attack": 156,
+      "defense": 192
+  },
+  {
+      "id": 88,
+      "name": "GRIMER",
+      "stamina": 160,
+      "attack": 124,
+      "defense": 110
+  },
+  {
+      "id": 89,
+      "name": "MUK",
+      "stamina": 210,
+      "attack": 180,
+      "defense": 188
+  },
+  {
+      "id": 90,
+      "name": "SHELLDER",
+      "stamina": 60,
+      "attack": 120,
+      "defense": 112
+  },
+  {
+      "id": 91,
+      "name": "CLOYSTER",
+      "stamina": 100,
+      "attack": 196,
+      "defense": 196
+  },
+  {
+      "id": 92,
+      "name": "GASTLY",
+      "stamina": 60,
+      "attack": 136,
+      "defense": 82
+  },
+  {
+      "id": 93,
+      "name": "HAUNTER",
+      "stamina": 90,
+      "attack": 172,
+      "defense": 118
+  },
+  {
+      "id": 94,
+      "name": "GENGAR",
+      "stamina": 120,
+      "attack": 204,
+      "defense": 156
+  },
+  {
+      "id": 95,
+      "name": "ONIX",
+      "stamina": 70,
+      "attack": 90,
+      "defense": 186
+  },
+  {
+      "id": 96,
+      "name": "DROWZEE",
+      "stamina": 120,
+      "attack": 104,
+      "defense": 140
+  },
+  {
+      "id": 97,
+      "name": "HYPNO",
+      "stamina": 170,
+      "attack": 162,
+      "defense": 196
+  },
+  {
+      "id": 98,
+      "name": "KRABBY",
+      "stamina": 60,
+      "attack": 116,
+      "defense": 110
+  },
+  {
+      "id": 99,
+      "name": "KINGLER",
+      "stamina": 110,
+      "attack": 178,
+      "defense": 168
+  },
+  {
+      "id": 100,
+      "name": "VOLTORB",
+      "stamina": 80,
+      "attack": 102,
+      "defense": 124
+  },
+  {
+      "id": 101,
+      "name": "ELECTRODE",
+      "stamina": 120,
+      "attack": 150,
+      "defense": 174
+  },
+  {
+      "id": 102,
+      "name": "EXEGGCUTE",
+      "stamina": 120,
+      "attack": 110,
+      "defense": 132
+  },
+  {
+      "id": 103,
+      "name": "EXEGGUTOR",
+      "stamina": 190,
+      "attack": 232,
+      "defense": 164
+  },
+  {
+      "id": 104,
+      "name": "CUBONE",
+      "stamina": 100,
+      "attack": 102,
+      "defense": 150
+  },
+  {
+      "id": 105,
+      "name": "MAROWAK",
+      "stamina": 120,
+      "attack": 140,
+      "defense": 202
+  },
+  {
+      "id": 106,
+      "name": "HITMONLEE",
+      "stamina": 100,
+      "attack": 148,
+      "defense": 172
+  },
+  {
+      "id": 107,
+      "name": "HITMONCHAN",
+      "stamina": 100,
+      "attack": 138,
+      "defense": 204
+  },
+  {
+      "id": 108,
+      "name": "LICKITUNG",
+      "stamina": 180,
+      "attack": 126,
+      "defense": 160
+  },
+  {
+      "id": 109,
+      "name": "KOFFING",
+      "stamina": 80,
+      "attack": 136,
+      "defense": 142
+  },
+  {
+      "id": 110,
+      "name": "WEEZING",
+      "stamina": 130,
+      "attack": 190,
+      "defense": 198
+  },
+  {
+      "id": 111,
+      "name": "RHYHORN",
+      "stamina": 160,
+      "attack": 110,
+      "defense": 116
+  },
+  {
+      "id": 112,
+      "name": "RHYDON",
+      "stamina": 210,
+      "attack": 166,
+      "defense": 160
+  },
+  {
+      "id": 113,
+      "name": "CHANSEY",
+      "stamina": 500,
+      "attack": 40,
+      "defense": 60
+  },
+  {
+      "id": 114,
+      "name": "TANGELA",
+      "stamina": 130,
+      "attack": 164,
+      "defense": 152
+  },
+  {
+      "id": 115,
+      "name": "KANGASKHAN",
+      "stamina": 210,
+      "attack": 142,
+      "defense": 178
+  },
+  {
+      "id": 116,
+      "name": "HORSEA",
+      "stamina": 60,
+      "attack": 122,
+      "defense": 100
+  },
+  {
+      "id": 117,
+      "name": "SEADRA",
+      "stamina": 110,
+      "attack": 176,
+      "defense": 150
+  },
+  {
+      "id": 118,
+      "name": "GOLDEEN",
+      "stamina": 90,
+      "attack": 112,
+      "defense": 126
+  },
+  {
+      "id": 119,
+      "name": "SEAKING",
+      "stamina": 160,
+      "attack": 172,
+      "defense": 160
+  },
+  {
+      "id": 120,
+      "name": "STARYU",
+      "stamina": 60,
+      "attack": 130,
+      "defense": 128
+  },
+  {
+      "id": 121,
+      "name": "STARMIE",
+      "stamina": 120,
+      "attack": 194,
+      "defense": 192
+  },
+  {
+      "id": 122,
+      "name": "MR_MIME",
+      "stamina": 80,
+      "attack": 154,
+      "defense": 196
+  },
+  {
+      "id": 123,
+      "name": "SCYTHER",
+      "stamina": 140,
+      "attack": 176,
+      "defense": 180
+  },
+  {
+      "id": 124,
+      "name": "JYNX",
+      "stamina": 130,
+      "attack": 172,
+      "defense": 134
+  },
+  {
+      "id": 125,
+      "name": "ELECTABUZZ",
+      "stamina": 130,
+      "attack": 198,
+      "defense": 160
+  },
+  {
+      "id": 126,
+      "name": "MAGMAR",
+      "stamina": 130,
+      "attack": 214,
+      "defense": 158
+  },
+  {
+      "id": 127,
+      "name": "PINSIR",
+      "stamina": 130,
+      "attack": 184,
+      "defense": 186
+  },
+  {
+      "id": 128,
+      "name": "TAUROS",
+      "stamina": 150,
+      "attack": 148,
+      "defense": 184
+  },
+  {
+      "id": 129,
+      "name": "MAGIKARP",
+      "stamina": 40,
+      "attack": 42,
+      "defense": 84
+  },
+  {
+      "id": 130,
+      "name": "GYARADOS",
+      "stamina": 190,
+      "attack": 192,
+      "defense": 196
+  },
+  {
+      "id": 131,
+      "name": "LAPRAS",
+      "stamina": 260,
+      "attack": 186,
+      "defense": 190
+  },
+  {
+      "id": 132,
+      "name": "DITTO",
+      "stamina": 96,
+      "attack": 110,
+      "defense": 110
+  },
+  {
+      "id": 133,
+      "name": "EEVEE",
+      "stamina": 110,
+      "attack": 114,
+      "defense": 128
+  },
+  {
+      "id": 134,
+      "name": "VAPOREON",
+      "stamina": 260,
+      "attack": 186,
+      "defense": 168
+  },
+  {
+      "id": 135,
+      "name": "JOLTEON",
+      "stamina": 130,
+      "attack": 192,
+      "defense": 174
+  },
+  {
+      "id": 136,
+      "name": "FLAREON",
+      "stamina": 130,
+      "attack": 238,
+      "defense": 178
+  },
+  {
+      "id": 137,
+      "name": "PORYGON",
+      "stamina": 130,
+      "attack": 156,
+      "defense": 158
+  },
+  {
+      "id": 138,
+      "name": "OMANYTE",
+      "stamina": 70,
+      "attack": 132,
+      "defense": 160
+  },
+  {
+      "id": 139,
+      "name": "OMASTAR",
+      "stamina": 140,
+      "attack": 180,
+      "defense": 202
+  },
+  {
+      "id": 140,
+      "name": "KABUTO",
+      "stamina": 60,
+      "attack": 148,
+      "defense": 142
+  },
+  {
+      "id": 141,
+      "name": "KABUTOPS",
+      "stamina": 120,
+      "attack": 190,
+      "defense": 190
+  },
+  {
+      "id": 142,
+      "name": "AERODACTYL",
+      "stamina": 160,
+      "attack": 182,
+      "defense": 162
+  },
+  {
+      "id": 143,
+      "name": "SNORLAX",
+      "stamina": 320,
+      "attack": 180,
+      "defense": 180
+  },
+  {
+      "id": 144,
+      "name": "ARTICUNO",
+      "stamina": 180,
+      "attack": 198,
+      "defense": 242
+  },
+  {
+      "id": 145,
+      "name": "ZAPDOS",
+      "stamina": 180,
+      "attack": 232,
+      "defense": 194
+  },
+  {
+      "id": 146,
+      "name": "MOLTRES",
+      "stamina": 180,
+      "attack": 242,
+      "defense": 194
+  },
+  {
+      "id": 147,
+      "name": "DRATINI",
+      "stamina": 82,
+      "attack": 128,
+      "defense": 110
+  },
+  {
+      "id": 148,
+      "name": "DRAGONAIR",
+      "stamina": 122,
+      "attack": 170,
+      "defense": 152
+  },
+  {
+      "id": 149,
+      "name": "DRAGONITE",
+      "stamina": 182,
+      "attack": 250,
+      "defense": 212
+  },
+  {
+      "id": 150,
+      "name": "MEWTWO",
+      "stamina": 212,
+      "attack": 284,
+      "defense": 202
+  },
+  {
+      "id": 151,
+      "name": "MEW",
+      "stamina": 200,
+      "attack": 220,
+      "defense": 220
+  }
+]

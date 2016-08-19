@@ -12,4 +12,11 @@ namespace :pgo do
     json.reject!{|obj| obj.has_key? "is_egg"}
     Pokemon.create json
   end
+
+  desc "Import pokemon reference data"
+  task :import_refs => :environment do |task, args|
+    file = File.read(Rails.root.join('db','pokemon_refs.json'))
+    json = JSON.parse file
+    PokemonRef.create json
+  end
 end
