@@ -12,6 +12,8 @@
               <td>Defense</td>
               <td>Attack</td>
               <td>Stamina</td>
+              <td>Sum</td>
+              <td>Pct Perfect</td>
             </tr>
           </thead>
           <tbody>
@@ -24,6 +26,8 @@
               <td><%= pokemon.individual_defense %></td>
               <td><%= pokemon.individual_attack %></td>
               <td><%= pokemon.individual_stamina %></td>
+              <td><%= pokemon.stat_sum %></td>
+              <td><%= number_to_percentage pokemon.stat_sum.to_f / 45 * 100, precision: 1 %></td>
             </tr>
             <% end %>
           </tbody>
