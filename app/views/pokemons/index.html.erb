@@ -19,7 +19,7 @@
           <tbody>
             <% @pokemons.each do |pokemon| %>
             <tr>
-              <td><%= pokemon.pokemon_id %></td>
+              <td><%= PokemonRef.find(pokemon.pokemon_id).name.humanize %></td>
               <td><%= pokemon.nickname || "-" %></td>
               <td><%= pokemon.move_1 %></td>
               <td><%= pokemon.move_2 %></td>
