@@ -1,1 +1,24 @@
 <h1>Pokemons</h1>
+
+<table>
+  <thead>
+    <tr>
+      <td>Move 1</td>
+      <td>Move 2</td>
+      <td>Defense</td>
+      <td>Attack</td>
+      <td>Stamina</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pokemons.each do |pokemon| %>
+    <tr>
+      <td><%= pokemon.move_1 %></td>
+      <td><%= pokemon.move_2 %></td>
+      <td><%= pokemon.individual_defense %></td>
+      <td><%= pokemon.individual_attack %></td>
+      <td><%= pokemon.individual_stamina %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
