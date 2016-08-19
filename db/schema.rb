@@ -19,10 +19,10 @@ ActiveRecord::Schema.define(version: 20160819171122) do
   create_table "pokemons", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|
     t.integer  "move_1"
     t.integer  "move_2"
-    t.integer  "captured_cell_id"
+    t.decimal  "captured_cell_id",         precision: 20
     t.integer  "pokeball"
     t.integer  "pokemon_id"
-    t.integer  "creation_time_ms"
+    t.bigint   "creation_time_ms"
     t.float    "height_m"
     t.integer  "stamina_max"
     t.float    "weight_kg"
@@ -31,13 +31,16 @@ ActiveRecord::Schema.define(version: 20160819171122) do
     t.integer  "individual_attack"
     t.integer  "cp"
     t.integer  "stamina"
+    t.float    "additional_cp_multiplier"
     t.float    "cp_multiplier"
-    t.integer  "pgo_id"
+    t.decimal  "pgo_id",                   precision: 20
+    t.integer  "num_upgrades"
     t.integer  "from_fort"
+    t.integer  "favorite"
     t.string   "nickname"
     t.integer  "battles_attacked"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
+    t.datetime "created_at",                              null: false
+    t.datetime "updated_at",                              null: false
   end
 
 end
