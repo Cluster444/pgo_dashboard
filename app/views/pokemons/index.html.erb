@@ -1,28 +1,34 @@
-<h1>Pokemons</h1>
-
-<table>
-  <thead>
-    <tr>
-      <td>Pokemon</td>
-      <td>Nickname</td>
-      <td>Move 1</td>
-      <td>Move 2</td>
-      <td>Defense</td>
-      <td>Attack</td>
-      <td>Stamina</td>
-    </tr>
-  </thead>
-  <tbody>
-    <% @pokemons.each do |pokemon| %>
-    <tr>
-      <td><%= pokemon.pokemon_id %></td>
-      <td><%= pokemon.nickname || "-" %></td>
-      <td><%= pokemon.move_1 %></td>
-      <td><%= pokemon.move_2 %></td>
-      <td><%= pokemon.individual_defense %></td>
-      <td><%= pokemon.individual_attack %></td>
-      <td><%= pokemon.individual_stamina %></td>
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Pokemons</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <td>Pokemon</td>
+              <td>Nickname</td>
+              <td>Move 1</td>
+              <td>Move 2</td>
+              <td>Defense</td>
+              <td>Attack</td>
+              <td>Stamina</td>
+            </tr>
+          </thead>
+          <tbody>
+            <% @pokemons.each do |pokemon| %>
+            <tr>
+              <td><%= pokemon.pokemon_id %></td>
+              <td><%= pokemon.nickname || "-" %></td>
+              <td><%= pokemon.move_1 %></td>
+              <td><%= pokemon.move_2 %></td>
+              <td><%= pokemon.individual_defense %></td>
+              <td><%= pokemon.individual_attack %></td>
+              <td><%= pokemon.individual_stamina %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
