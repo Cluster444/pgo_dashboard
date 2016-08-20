@@ -8,6 +8,7 @@
               <th data-sortable="true">Name</th>
               <th data-sortable="true">Nick</th>
               <th data-sortable="true">CP</th>
+              <th data-sortable="true">CPx</th>
               <th data-sortable="true">Move 1</th>
               <th data-sortable="true">Move 2</th>
               <th data-sortable="true">Def</th>
@@ -23,13 +24,14 @@
               <td><%= PokemonRef.find(pokemon.pokemon_id).name.humanize %></td>
               <td><%= pokemon.nickname || "-" %></td>
               <td><%= pokemon.cp %></td>
+              <td><%= pokemon.cp_multiplier.round(2) %></td>
               <td><%= pokemon.move_1 %></td>
               <td><%= pokemon.move_2 %></td>
               <td><%= pokemon.individual_defense %></td>
               <td><%= pokemon.individual_attack %></td>
               <td><%= pokemon.individual_stamina %></td>
               <td><%= pokemon.stat_sum %></td>
-              <td><%= number_to_percentage pokemon.stat_sum.to_f / 45 * 100, precision: 1 %></td>
+              <td><%= (pokemon.stat_sum.to_f / 45 * 100).round(1) %></td>
             </tr>
             <% end %>
           </tbody>

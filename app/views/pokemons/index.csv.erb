@@ -1,0 +1,4 @@
+name,<%= @pokemons.first.attributes.keys.reject{|key| key == 'id'}.join(",") %>
+<% @pokemons.each do |pokemon| %>
+<%= PokemonRef.find(pokemon.pokemon_id).name %>,<%= pokemon.attributes.reject{|k,v| k == 'id'}.values.join(",") %>
+<% end %>
