@@ -1,4 +1,6 @@
 class Pokemon < ApplicationRecord
+  belongs_to :user
+
   def defense
     individual_defense || 0
   end
