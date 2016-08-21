@@ -1,6 +1,6 @@
 namespace :pgo do
   desc "Import a JSON dump of Pokemon data into database"
-  task :import, [:file] => :environment do |task, args|
+  task :import, [:file, :login_name] => :environment do |task, args|
     require 'json'
     require 'pp'
     file = File.read(Rails.root.join('tmp',args.file))
@@ -10,7 +10,8 @@ namespace :pgo do
       pokemon.delete('id')
     end
     json.reject!{|obj| obj.has_key? "is_egg"}
-    Pokemon.create json
+    account = PokeAuth.find_by(login_name: args.login_name)
+    account.pokemons.create! json
   end
 
   desc "Import pokemon reference data"
