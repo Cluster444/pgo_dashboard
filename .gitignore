@@ -18,3 +18,4 @@
 
 # Ignore vim files
 .*.sw?
+.envrc

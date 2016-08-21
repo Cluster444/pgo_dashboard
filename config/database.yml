@@ -82,4 +82,5 @@ production:
   <<: *default
   database: pgo_dashboard_production
   username: pgo_dashboard
+  host: <%= ENV['PGO_DASHBOARD_DATABASE_HOST'] %>
   password: <%= ENV['PGO_DASHBOARD_DATABASE_PASSWORD'] %>
