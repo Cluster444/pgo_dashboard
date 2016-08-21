@@ -10,11 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160819231328) do
+ActiveRecord::Schema.define(version: 20160821200923) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "uuid-ossp"
+
+  create_table "poke_auths", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|
+    t.string   "auth_type"
+    t.string   "login_name"
+    t.uuid     "user_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "display_name"
+    t.index ["user_id"], name: "index_poke_auths_on_user_id", using: :btree
+  end
 
   create_table "pokemon_refs", id: :integer, force: :cascade do |t|
     t.string   "name"
@@ -52,6 +62,25 @@ ActiveRecord::Schema.define(version: 20160819231328) do
     t.datetime "updated_at",                              null: false
     t.integer  "battles_defended"
     t.string   "deployed_fort_id"
+    t.uuid     "user_id"
+    t.index ["user_id"], name: "index_pokemons_on_user_id", using: :btree
   end
 
+  create_table "users", id: :uuid, default: -> { "uuid_generate_v4()" }, force: :cascade do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "auth_type"
+    t.string   "location"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  end
+
+  add_foreign_key "poke_auths", "users"
+  add_foreign_key "pokemons", "users"
 end
