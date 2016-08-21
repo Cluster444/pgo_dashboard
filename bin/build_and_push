@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Build Docker image
+docker build -t ${REPOSITORY} .
+
+# Tag Docker image for Amazon ECR
+docker tag -f ${REPOSITORY}:latest ${AWS_ACCOUNT_ID}.dkr.ecr.${EC2_REGION}.amazonaws.com/${REPOSITORY}:latest
+
+# Log in to ECR
+$(aws ecr get-login --region us-east-1)
+
+# Create repository in ECR
+aws ecr create-repository --repository-name ${REPOSITORY}
+
+# Push image ECR repository
+docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${EC2_REGION}.amazonaws.com/${REPOSITORY}:latest
