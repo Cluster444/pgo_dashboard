@@ -1,0 +1,16 @@
+<div class="wrapper preload">
+	        
+    <%= render 'shared/right_sidebar.html.erb' %>	
+    <%= render 'shared/header' %>	
+	<%= render 'shared/side_menu' %>			
+
+    <div class="main-container">
+        <div class="padding-md">
+          <h2 class="header-text">Pokemon</h2>
+        </div>
+        <div class="padding-md">
+          <p>You haven't imported your Pokemon yet. To begin, add a Pokemon Go account.</p>
+          <p><%= link_to "Add a Pokemon Go account", new_poke_auth_path, class: 'btn btn-lg btn-primary' %></p>
+        </div>
+    </div>
+</div>

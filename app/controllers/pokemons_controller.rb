@@ -3,6 +3,11 @@ class PokemonsController < ApplicationController
 
   def index
     @pokemons = Pokemon.all
+    if @pokemons.any?
+      render :index
+    else
+      render :no_pokemon
+    end
   end
 
   def csv
