@@ -1,5 +1,5 @@
 class Pokemon < ApplicationRecord
-  belongs_to :user
+  belongs_to :poke_auth
 
   def defense
     individual_defense || 0

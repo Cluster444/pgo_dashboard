@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160821200923) do
+ActiveRecord::Schema.define(version: 20160821203305) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,6 +63,8 @@ ActiveRecord::Schema.define(version: 20160821200923) do
     t.integer  "battles_defended"
     t.string   "deployed_fort_id"
     t.uuid     "user_id"
+    t.uuid     "poke_auth_id"
+    t.index ["poke_auth_id"], name: "index_pokemons_on_poke_auth_id", using: :btree
     t.index ["user_id"], name: "index_pokemons_on_user_id", using: :btree
   end
 
@@ -82,5 +84,6 @@ ActiveRecord::Schema.define(version: 20160821200923) do
   end
 
   add_foreign_key "poke_auths", "users"
+  add_foreign_key "pokemons", "poke_auths"
   add_foreign_key "pokemons", "users"
 end

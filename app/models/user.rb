@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :pokemons
   has_many :poke_auths
+
+  def has_multiple_accounts?
+    poke_auths.count > 1
+  end
 end
