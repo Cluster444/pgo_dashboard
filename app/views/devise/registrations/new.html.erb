@@ -1,0 +1,33 @@
+<div class="wrapper no-navigation preload">
+			<div class="sign-in-wrapper">
+				<div class="sign-in-inner">
+					<div class="login-brand text-center">
+					    Pokemon Go<br /><strong>Mission Control</strong>
+					</div>
+                <h2>Create an account</h2>
+
+                <%= render 'shared/flash' %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="form-group m-bottom-md">
+    <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Email address' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password' %>
+  </div>
+
+  <div class="m-top-md p-top-sm">
+    <%= f.submit "Sign up", class: 'btn btn-success block', style: 'width: 100%' %>
+  </div>
+<% end %>
+
+<div class="m-top-md p-top-sm">
+  <div class="font-12 text-center m-bottom-xs">
+<%= render "devise/shared/links" %>
+</div>
+</div>
+</div>
+</div>

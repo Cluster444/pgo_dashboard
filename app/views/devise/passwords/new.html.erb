@@ -1,0 +1,31 @@
+<div class="wrapper no-navigation preload">
+			<div class="sign-in-wrapper">
+				<div class="sign-in-inner">
+					<div class="login-brand text-center">
+						<%= image_tag 'logo.png' %>
+					</div>
+                <h2>Reset your password</h2>
+
+                <%= render 'shared/flash' %>
+
+                <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+                  <div class="form-group m-bottom-md">
+                    <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Email address' %>
+                  </div>
+
+			      <div class="m-top-md p-top-sm">
+                    <%= f.submit "Send me reset password instructions", class: 'btn btn-success block', style: 'width: 100%' %>
+                  </div>
+             
+                  <div class="m-top-md p-top-sm">
+				    <div class="font-12 text-center m-bottom-xs">
+					  <a href="<%= new_user_session_path(resource) %>" class="font-12">Sign in</a>
+					</div>
+                  </div>
+                <% end %>
+
+								</div><!-- ./sign-in-inner -->
+			</div><!-- ./sign-in-wrapper -->
+		</div><!-- /wrapper -->
+
+		<a href="" id="scroll-to-top" class="hidden-print"><i class="icon-chevron-up"></i></a>

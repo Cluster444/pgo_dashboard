@@ -1,42 +1,58 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Pokemon</h1>
-        <table class="table table-striped" data-toggle="table" data-search="true">
-          <thead>
-            <tr>
-              <th data-sortable="true">Name</th>
-              <th data-sortable="true">Nick</th>
-              <th data-sortable="true">CP</th>
-              <th data-sortable="true">CPx</th>
-              <th data-sortable="true">Move 1</th>
-              <th data-sortable="true">Move 2</th>
-              <th data-sortable="true">Def</th>
-              <th data-sortable="true">Att</th>
-              <th data-sortable="true">Stam</th>
-              <th data-sortable="true">Sum</th>
-              <th data-sortable="true">%</th>
-            </tr>
-          </thead>
-          <tbody>
-            <% @pokemons.each do |pokemon| %>
-            <tr>
-              <td><%= PokemonRef.find(pokemon.pokemon_id).name.humanize %></td>
-              <td><%= pokemon.nickname || "-" %></td>
-              <td><%= pokemon.cp %></td>
-              <td><%= pokemon.cp_multiplier.round(2) %></td>
-              <td><%= pokemon.move_1 %></td>
-              <td><%= pokemon.move_2 %></td>
-              <td><%= pokemon.individual_defense %></td>
-              <td><%= pokemon.individual_attack %></td>
-              <td><%= pokemon.individual_stamina %></td>
-              <td><%= pokemon.stat_sum %></td>
-              <td><%= (pokemon.stat_sum.to_f / 45 * 100).round(1) %></td>
-            </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
+<div class="wrapper preload">
+	        
+    <%= render 'shared/right_sidebar.html.erb' %>	
+    <%= render 'shared/header' %>	
+	<%= render 'shared/side_menu' %>			
+
+    <div class="main-container">
+        <div class="padding-md">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="page-title">
+                        Pokemon
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padding-md">
+            <table class="table table-striped" data-toggle="table" data-search="true">
+              <thead>
+                <tr>
+                  <th data-sortable="true">Name</th>
+                  <th data-sortable="true">Nick</th>
+                  <th data-sortable="true">CP</th>
+                  <th data-sortable="true">CPx</th>
+                  <th data-sortable="true">Move 1</th>
+                  <th data-sortable="true">Move 2</th>
+                  <th data-sortable="true">Def</th>
+                  <th data-sortable="true">Att</th>
+                  <th data-sortable="true">Stam</th>
+                  <th data-sortable="true">Sum</th>
+                  <th data-sortable="true">%</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @pokemons.each do |pokemon| %>
+                <tr>
+                  <td><%= PokemonRef.find(pokemon.pokemon_id).name.humanize %></td>
+                  <td><%= pokemon.nickname || "-" %></td>
+                  <td><%= pokemon.cp %></td>
+                  <td><%= pokemon.cp_multiplier.round(2) %></td>
+                  <td><%= pokemon.move_1 %></td>
+                  <td><%= pokemon.move_2 %></td>
+                  <td><%= pokemon.individual_defense %></td>
+                  <td><%= pokemon.individual_attack %></td>
+                  <td><%= pokemon.individual_stamina %></td>
+                  <td><%= pokemon.stat_sum %></td>
+                  <td><%= (pokemon.stat_sum.to_f / 45 * 100).round(1) %></td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+
+        </div>
     </div>
-  </div>
+
+    <%= render 'shared/footer' %>
+
 </div>

@@ -1,0 +1,52 @@
+<div class="wrapper no-navigation preload">
+			<div class="sign-in-wrapper">
+				<div class="sign-in-inner">
+					<div class="login-brand text-center">
+					    Pokemon Go<br /><strong>Mission Control</strong>
+					</div>
+                <h2>Log in</h2>
+
+                <%= render 'shared/flash' %>
+
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                  <div class="form-group m-bottom-md">
+                    <%= f.email_field :email, autofocus: true, class: 'form-control', placeholder: 'Email address' %>
+                  </div>
+
+                  <div class="form-group">
+                    <%= f.password_field :password, autocomplete: "off", class: 'form-control', placeholder: 'Password' %>
+                  </div>
+
+                  <% if devise_mapping.rememberable? -%>
+                    <div class="form-group">
+				      <div class="custom-checkbox">
+                        <%= f.check_box :remember_me, id: 'chkRemember' %>
+					    <label for="chkRemember"></label>
+                      </div>
+                      Remember me
+                    </div>
+                  <% end -%>
+
+			      <div class="m-top-md p-top-sm">
+                    <%= f.submit "Log in", class: 'btn btn-success block', style: 'width: 100%' %>
+                  </div>
+             
+                  <div class="m-top-md p-top-sm">
+				    <div class="font-12 text-center m-bottom-xs">
+					  <a href="<%= new_registration_path(resource) %>" class="font-12">Create an account</a>
+					  <a href="<%= new_password_path(resource) %>" class="font-12">Forgot password ?</a>
+					</div>
+                  </div>
+                <% end %>
+
+								</div><!-- ./sign-in-inner -->
+			</div><!-- ./sign-in-wrapper -->
+		</div><!-- /wrapper -->
+
+		<a href="" id="scroll-to-top" class="hidden-print"><i class="icon-chevron-up"></i></a>
+
+
+
+
+
+
