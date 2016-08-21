@@ -1,0 +1,36 @@
+<div class="wrapper preload">
+	        
+    <%= render 'shared/right_sidebar.html.erb' %>	
+    <%= render 'shared/header' %>	
+	<%= render 'shared/side_menu' %>			
+
+    <div class="main-container">
+        <div class="padding-md">
+          <h2 class="header-text">Pokemon Go Accounts
+            <a href="<%= new_poke_auth_path %>" class="btn btn-md btn-primary pull-right"><i class="fa fa-plus-circle"></i> Add account</a>
+          </h2>
+        </div>
+        <div class="padding-md">
+            <table class="table table-striped" data-toggle="table" data-search="true">
+              <thead>
+                <tr>
+                  <th data-sortable="true">Name</th>
+                  <th data-sortable="true">Type</th>
+                  <th data-sortable="true">Login</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @poke_auths.each do |poke_auth| %>
+                <tr>
+                  <td><%= poke_auth.display_name %></td>
+                  <td><%= poke_auth.auth_type %></td>
+                  <td><%= poke_auth.login_name %></td>
+                  <td></td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
