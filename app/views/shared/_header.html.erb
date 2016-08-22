@@ -27,7 +27,7 @@
 
 <% if user_signed_in? && current_user.has_multiple_accounts? %>
   Account:
-  <!-- render dropdown of all accounts -->
+  
 <% else %>
   Account: <%= current_user.poke_auths.first.display_name %>
 <% end %>

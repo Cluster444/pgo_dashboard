@@ -1,0 +1,32 @@
+<%= render 'shared/flash' %>
+
+<div class="smart-widget m-top-lg widget-dark-blue">
+  <div class="smart-widget-header">New account</div>
+  <div class="smart-widget-inner">
+    <div class="smart-widget-body">
+<%= form_for(@poke_auth, url: poke_auths_path, class: 'form-horizontal') do |f| %>
+
+  <div class="form-group m-bottom-md">
+    <%= f.label :display_name, "Account name" %>
+    <%= f.text_field :display_name, autofocus: true, class: 'form-control' %>
+    <span class="help-block">Choose a name for this account (e.g. My Test Gmail account)</span>
+  </div>
+
+  <div class="form-group m-bottom-md">
+    <%= f.label :auth_type, "Account type" %>
+    <%= f.text_field :auth_type, class: 'form-control' %>
+  </div>
+
+  <div class="form-group m-bottom-md">
+    <%= f.label :login_name, "Username" %>
+    <%= f.text_field :login_name, class: 'form-control' %>
+    <span class="help-block">Username for logging into this account (e.g. mypokeaccount@gmail.com)</span>
+  </div>
+
+  <div class="m-top-md p-top-sm">
+    <%= f.submit "Add account", class: 'btn btn-md btn-primary' %>
+  </div>
+<% end %>
+  </div>
+</div>
+</div>

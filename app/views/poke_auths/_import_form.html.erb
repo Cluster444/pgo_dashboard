@@ -1,0 +1,27 @@
+<%= render 'shared/flash' %>
+
+<div class="smart-widget m-top-lg widget-dark-blue">
+  <div class="smart-widget-header">New Pokemon data import</div>
+  <div class="smart-widget-inner">
+    <div class="smart-widget-body">
+<%= form_for(@poke_auth, url: perform_import_poke_auth_path(@poke_auth.id), class: 'form-horizontal') do |f| %>
+
+  <div class="form-group m-bottom-md">
+    <%= f.label :location, "Location" %>
+    <%= f.text_field :location, autofocus: true, class: 'form-control' %>
+    <span class="help-block">Enter the nearest address to your current location (e.g. 123 Main St. Los Angeles, 90210)</span>
+  </div>
+
+  <div class="form-group m-bottom-md">
+    <%= f.label :password, "Account password" %>
+    <%= f.password_field :password, autofocus: true, class: 'form-control' %>
+    <span class="help-block">Enter the password for <strong><%= @poke_auth.login_name %></strong></span>
+  </div>
+
+  <div class="m-top-md p-top-sm">
+    <%= f.submit "Import data", class: 'btn btn-md btn-primary' %>
+  </div>
+<% end %>
+  </div>
+</div>
+</div>

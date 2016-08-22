@@ -9,8 +9,6 @@
           <h2 class="header-text">Pokemon Go Accounts
             <a href="<%= new_poke_auth_path %>" class="btn btn-md btn-primary pull-right"><i class="fa fa-plus-circle"></i> Add account</a>
           </h2>
-        </div>
-        <div class="padding-md">
             <table class="table table-striped" data-toggle="table" data-search="true">
               <thead>
                 <tr>
@@ -26,7 +24,8 @@
                   <td><%= poke_auth.display_name %></td>
                   <td><%= poke_auth.auth_type %></td>
                   <td><%= poke_auth.login_name %></td>
-                  <td></td>
+                  <td><%= link_to "Import data", import_poke_auth_path(poke_auth.id), class: 'btn btn-sm btn-primary' %>  
+                  </td>
                 </tr>
                 <% end %>
               </tbody>
