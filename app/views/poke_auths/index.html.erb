@@ -21,7 +21,7 @@
               <tbody>
                 <% @poke_auths.each do |poke_auth| %>
                 <tr>
-                  <td><%= poke_auth.display_name %></td>
+                  <td><%= poke_auth.display_name %><%= " <span class='label label-warning'>default</span>".html_safe if poke_auth.default? %></td>
                   <td><%= poke_auth.auth_type %></td>
                   <td><%= poke_auth.login_name %></td>
                   <td>
