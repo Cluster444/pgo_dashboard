@@ -26,7 +26,7 @@
                   <td><%= poke_auth.login_name %></td>
                   <td>
                     <%= link_to "Import data", import_poke_auth_path(poke_auth.id), class: 'btn btn-sm btn-primary' %>  
-                    <%= unless poke_auth.default? then link_to "Make default", default_poke_auth_path(poke_auth.id), class: 'btn btn-sm btn-warning' end %>  
+                    <%= unless poke_auth.default? then button_to("Make default", default_poke_auth_path(poke_auth.id), method: :patch, class: 'btn btn-sm btn-warning') end %>  
                   </td>
                 </tr>
                 <% end %>
