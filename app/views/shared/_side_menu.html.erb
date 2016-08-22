@@ -6,7 +6,7 @@
 								Main Menu
 							</li>
 							<li class="bg-palette5 active">
-								<a href="<%= pokemons_path %>">
+								<a href="<%= pokemons_path(poke_auth_id: PokeAuth.default.id)  %>">
 									<span class="menu-content block">
 										<span class="menu-icon"><img src="<%= image_path('pokeball.svg') %>" width="20" style="padding: 0; margin: 0;" /></span>
 										<span class="text m-left-sm">Pokemon</span>
