@@ -6,7 +6,19 @@
 
     <div class="main-container">
         <div class="padding-md">
-          <h2 class="header-text">Pokemon</h2>
+          <h2 class="header-text">Pokemon
+          <% if user_signed_in? && current_user.has_multiple_accounts? %>
+          <select class="form-control pull-right" style="width: auto" id="poke_auth_selector">
+            <% current_user.poke_auths.each do |poke_auth| %>
+            <option value="<%= poke_auth.id %>" <%= if params[:poke_auth_id] == poke_auth.id then 'selected' end%>><%= poke_auth.display_name %></option>
+            <% end %> 
+          </select>
+          <% else %>
+            Account: <%= current_user.poke_auths.first.display_name %>
+          <% end %>
+     
+          </h2>
+
             <table class="table table-striped" data-toggle="table" data-search="true">
               <thead>
                 <tr>
@@ -48,3 +60,9 @@
     <%= render 'shared/footer' %>
 
 </div>
+
+<script>
+$("#poke_auth_selector").change(function() {
+  window.location = "/pokemons?poke_auth_id=" + $("#poke_auth_selector").val()
+})
+</script>
