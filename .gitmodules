@@ -1,0 +1,3 @@
+[submodule "vendor/pgoapi"]
+	path = vendor/pgoapi
+	url = git@github.com:zukowski/pgoapi.git
