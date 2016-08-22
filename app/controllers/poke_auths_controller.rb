@@ -31,6 +31,7 @@ class PokeAuthsController < ApplicationController
   def default
     @poke_auth = PokeAuth.find(params[:id])
     @poke_auth.default!
+    redirect_to poke_auths_path
   end
 
 
