@@ -28,6 +28,12 @@ class PokeAuthsController < ApplicationController
     render :new_import
   end
 
+  def default
+    @poke_auth = PokeAuth.find(params[:id])
+    @poke_auth.default!
+  end
+
+
   private
  
   def poke_auth_params
