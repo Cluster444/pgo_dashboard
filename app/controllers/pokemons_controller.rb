@@ -3,7 +3,8 @@ class PokemonsController < ApplicationController
 
   def index
     @poke_auth = load_poke_auth
-    render :no_pokemon and return if @poke_auth.nil? || @poke_auth.pokemons.empty?
+    render :no_poke_auths and return if @poke_auth.nil?
+    render :no_pokemon and return if @poke_auth.pokemons.empty?
     @pokemons = @poke_auth.pokemons
   end
 
